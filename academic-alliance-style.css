@@ -1,0 +1,340 @@
+/* Stylesheet for The Advantage microsite */
+
+/* 1. Imported fonts from Google*/
+@import url('https://fonts.googleapis.com/css?family=Arimo|GFS+Didot');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+/* 2. Global styling */
+
+.content h2,h3,h4,h5,h6,p, .flex-item h2,.supp-text li, .section-featured h2, .breadcrumbs.breadcrumbs-white a, article.Two h2, article.Two p, article.Two a {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.adv-menu li {
+  display:inline;
+  border-right: 1px solid #bbb;
+  background-image: none;
+  padding-left:0;
+}
+
+.adv-menu li:last-child {
+border-bottom: none;
+}
+
+.adv-menu li:last-child {
+  border-right: none;
+}
+
+.adv-menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  padding: 1rem;
+  background-color: #000;
+  text-align: center;
+}
+
+.adv-menu li a {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 18px;
+}
+
+.adv-menu li a:hover {
+    color: #e0e0e0;
+}
+
+.adv-menu li a.current {
+    font-weight: 800;
+}
+
+.masthead-image h1 span, .masthead-image h1, .masthead-image h2 {
+  font-family: 'GFS Didot', serif;
+  text-align: center;
+}
+
+.masthead-image .masthead-content {
+  width: 100%;
+  padding-right:0;
+}
+
+.content h2, .row h2, .section-featured h2 {
+  color: #000!important;
+  letter-spacing: 0!important;
+}
+
+.section-featured h2 {
+  margin-bottom:1em!important;
+}
+
+.masthead-image h1 {
+font-size: 66px;
+letter-spacing: -1px;
+font-weight: 400;
+}
+
+.masthead-image.darken:before {
+    opacity: 0.7;
+}
+
+.content .inner {
+  max-width: 75%;
+}
+
+.intro-text {
+    float: left;
+    max-width: 62%;
+}
+
+.adv-callout {
+    float: right;
+    background-color: #2d7bab;
+    padding: .4em 4em;
+    position: relative;
+    top: 4em;
+    right: 0;
+    max-width: 320px;
+}
+
+.content+.content, .row {
+  border-top:none;
+}
+
+.adv-callout h4, .adv-callout h2 {
+    color: #fff;
+}
+
+.adv-callout h4 {
+    font-size:22px;
+}
+
+.adv-callout a {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.adv-callout a.btn {
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 2em 0;
+}
+
+a.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.inner h2 {
+    line-height: 1.6em;
+}
+
+.adv-callout h2 {
+    margin: .2em 0;
+}
+
+
+.supp-text article.Two:first-child {
+  width:33%;
+  margin-top:3em;
+}
+
+.supp-text .text-right {
+  margin: 3em 1em;
+}
+
+.student-testimonial {
+  margin-top:-1.5em;
+  margin-bottom: 0;
+}
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 4 2 auto;
+    -ms-flex: 4 2 auto;
+    flex: 4 2 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: center;
+    }
+
+.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: center;
+    }
+
+.flex-item {
+  padding:.5em;
+}
+
+article.Two h2 {
+    color: #000;
+    letter-spacing: 0;
+    margin-bottom: .6em;
+}
+
+article.Two a {
+  font-weight:700;
+  color: #2d7bab;
+  font-size: 20px;
+}
+
+article.Two a:hover {
+  color:#000;
+}
+
+
+/* Media queries */
+
+@media only screen and (min-width: 1440px) {
+.masthead-image h2 {
+    font-size: 42px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.masthead-image h1 span {
+    padding: 0px 0px 30px 0;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+.masthead-container {
+    height: 480px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+.content .inner, .row .inner {
+    max-width: 75%;
+}
+}
+
+@media only screen and (min-width: 414px) {
+.supp-text img {
+    width: 100%;
+    margin: 1em;
+    float: left;
+}
+}
+
+@media only screen and (min-width: 900px) {
+.supp-text article.Two:first-child {
+  width:33%;
+}
+
+}
+
+@media only screen and (min-width: 900px) {
+.supp-text article.Two {
+  width:60%;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro-text {
+  max-width:100%;
+}
+}
+
+@media only screen and (max-width: 1162px) {
+  .intro-text {
+  max-width:100%;
+}
+}
+
+@media only screen and (min-width:1163px) and (max-width:1382px) {
+  .intro-text {
+    max-width:50%;
+  }
+}
+
+@media only screen and (max-width:899px) {
+  .supp-text article.Two:first-child {
+    width: 100%;
+    margin-top: 2em;
+}
+}
+
+@media only screen and (max-width:899px) {
+  .supp-text .text-right {
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+.masthead-content.animated.fadeInUp {
+    padding: 40px 0;
+}
+}
+
+@media only screen and (max-width:996px) {
+  .adv-menu li {
+  display:block;
+  border-right: none;
+}
+  .adv-menu li a {
+  padding: 0;
+}
+}
+
+@media only screen and (min-width: 900px) {
+.adv-courses article.Two {
+    float: left;
+    width: 40%;
+    margin-right: 20%;
+}
+}
+
+@media only screen and (min-width: 900px) {
+.adv-courses article.Two:nth-of-type(2n+2) {
+    float: right!important;
+    margin-right: 4em;
+}
+
+.adv-courses article.Two {
+    float: left;
+    width: 40%;
+    margin-left: 4em;
+    margin-right: 0;
+}
+}
+
+
+@media only screen and (min-width:996px) and (max-width:1378px) {
+    .adv-menu li a {
+      font-size:16px;
+      padding:1rem;
+    }
+}
