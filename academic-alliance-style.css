@@ -52,8 +52,10 @@ border-bottom: none;
 }
 
 .masthead-image h1 span, .masthead-image h1, .masthead-image h2 {
-  font-family: 'GFS Didot', serif;
-  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000;
+  text-shadow: inherit;
+  text-align: right;
 }
 
 .masthead-image .masthead-content {
@@ -91,7 +93,7 @@ font-weight: 400;
 
 .adv-callout {
     float: right;
-    background-color: #2d7bab;
+    background-color: #000;
     padding: .4em 4em;
     position: relative;
     top: 4em;
@@ -212,6 +214,29 @@ article.Two a {
 
 article.Two a:hover {
   color:#000;
+}
+
+.masthead-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.masthead-image h1 span {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-bottom: 1rem;
+    letter-spacing: -3px;
+}
+
+.masthead-content h3 {
+  text-align: right;
+  color: #000;
+  text-transform: uppercase;
 }
 
 
@@ -337,4 +362,34 @@ article.Two a:hover {
       font-size:16px;
       padding:1rem;
     }
+}
+
+@media only screen and (min-width: 1440px) {
+.masthead-image h2 {
+    font-size: 28px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.masthead-image h1 span {
+    padding: 20px 0px 20px 0;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+  .masthead-image .masthead-content {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .masthead-image h1 span {
+      padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 643px) {
+  .masthead-image h1 span {
+      font-size: 48px;
+  }
 }
